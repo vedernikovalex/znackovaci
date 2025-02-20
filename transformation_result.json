@@ -1,0 +1,227 @@
+{
+  "providers": [
+    {
+      "provID": "P001",
+      "provIdentifier": "P001",
+      "provName": "Healthcare Provider One",
+      "provEstablishmentYear": 1995,
+      "provRating": 4.5,
+      "provAddress": {
+        "addrStreet": "123 Health St.",
+        "addrCity": "CityOne",
+        "addrState": "StateOne",
+        "addrPostal": "12345",
+        "addrCountry": "US"
+      },
+      "provContacts": {
+        "contactPhone": "+1-555-111-2222",
+        "contactEmail": "contact1@healthcare.com",
+        "contactWebsite": "https://providerone.com"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D001",
+          "deptName": "Cardiology",
+          "deptHead": "Dr. Heart",
+          "deptPhone": "+1-555-111-3333",
+          "deptLocation": "Building A",
+          "deptFloor": 1
+        },
+        {
+          "deptID": "D002",
+          "deptName": "Pediatrics",
+          "deptHead": "Dr. Kid",
+          "deptPhone": "+1-555-111-4444",
+          "deptLocation": "Building B",
+          "deptFloor": 2
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S001",
+          "servName": "General Check-up",
+          "servDesc": "Routine medical check-up services",
+          "servFee": "100",
+          "servDuration": "30 minutes",
+          "servType": "Consultation",
+          "servAvailability": "Available",
+          "serviceStatus": "active"
+        },
+        {
+          "servID": "S002",
+          "servName": "Emergency",
+          "servDesc": "24/7 emergency services",
+          "servFee": "Variable",
+          "servDuration": "Immediate",
+          "servType": "Critical",
+          "servAvailability": "Always",
+          "serviceStatus": "active"
+        }
+      ]
+    },
+    {
+      "provID": "P002",
+      "provIdentifier": "P002",
+      "provName": "Healthcare Provider Two",
+      "provEstablishmentYear": 2000,
+      "provRating": 4.2,
+      "provAddress": {
+        "addrStreet": "456 Wellness Ave.",
+        "addrCity": "CityTwo",
+        "addrState": "StateTwo",
+        "addrPostal": "23456",
+        "addrCountry": "US"
+      },
+      "provContacts": {
+        "contactPhone": "+1-555-222-3333",
+        "contactEmail": "info@healthtwo.com",
+        "contactWebsite": "https://healthtwo.com"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D003",
+          "deptName": "Orthopedics",
+          "deptHead": "Dr. Bone",
+          "deptPhone": "+1-555-222-4444",
+          "deptLocation": "Building C",
+          "deptFloor": 3
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S003",
+          "servName": "Physical Therapy",
+          "servDesc": "Rehabilitation services",
+          "servFee": "150",
+          "servDuration": "45 minutes",
+          "servType": "Therapy",
+          "servAvailability": "Available",
+          "serviceStatus": "active"
+        }
+      ]
+    },
+    {
+      "provID": "P003",
+      "provIdentifier": "P003",
+      "provName": "Healthcare Provider Three",
+      "provEstablishmentYear": 2010,
+      "provRating": 4.8,
+      "provAddress": {
+        "addrStreet": "789 Care Blvd.",
+        "addrCity": "CityThree",
+        "addrState": "StateThree",
+        "addrPostal": "34567",
+        "addrCountry": "US"
+      },
+      "provContacts": {
+        "contactPhone": "+1-555-333-4444",
+        "contactEmail": "support@healththree.com",
+        "contactWebsite": "https://healththree.com"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D004",
+          "deptName": "Neurology",
+          "deptHead": "Dr. Brain",
+          "deptPhone": "+1-555-333-5555",
+          "deptLocation": "Building D",
+          "deptFloor": 1
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S004",
+          "servName": "MRI Scan",
+          "servDesc": "Advanced imaging services",
+          "servFee": "500",
+          "servDuration": "1 hour",
+          "servType": "Imaging",
+          "servAvailability": "Limited",
+          "serviceStatus": "inactive"
+        }
+      ]
+    },
+    {
+      "provID": "P004",
+      "provIdentifier": "P004",
+      "provName": "Healthcare Provider Four",
+      "provEstablishmentYear": 1985,
+      "provRating": 4.0,
+      "provAddress": {
+        "addrStreet": "321 Recovery Rd.",
+        "addrCity": "CityFour",
+        "addrState": "StateFour",
+        "addrPostal": "45678",
+        "addrCountry": "US"
+      },
+      "provContacts": {
+        "contactPhone": "+1-555-444-5555",
+        "contactEmail": "hello@healthfour.com",
+        "contactWebsite": "https://healthfour.com"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D005",
+          "deptName": "Dermatology",
+          "deptHead": "Dr. Skin",
+          "deptPhone": "+1-555-444-6666",
+          "deptLocation": "Building E",
+          "deptFloor": 2
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S005",
+          "servName": "Skin Treatment",
+          "servDesc": "Advanced dermatology services",
+          "servFee": "200",
+          "servDuration": "40 minutes",
+          "servType": "Therapy",
+          "servAvailability": "Available",
+          "serviceStatus": "active"
+        }
+      ]
+    },
+    {
+      "provID": "P005",
+      "provIdentifier": "P005",
+      "provName": "Healthcare Provider Five",
+      "provEstablishmentYear": 2005,
+      "provRating": 4.3,
+      "provAddress": {
+        "addrStreet": "654 Wellness St.",
+        "addrCity": "CityFive",
+        "addrState": "StateFive",
+        "addrPostal": "56789",
+        "addrCountry": "US"
+      },
+      "provContacts": {
+        "contactPhone": "+1-555-555-6666",
+        "contactEmail": "contact5@healthfive.com",
+        "contactWebsite": "https://healthfive.com"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D006",
+          "deptName": "Oncology",
+          "deptHead": "Dr. Cure",
+          "deptPhone": "+1-555-555-7777",
+          "deptLocation": "Building F",
+          "deptFloor": 3
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S006",
+          "servName": "Chemotherapy",
+          "servDesc": "Cancer treatment services",
+          "servFee": "800",
+          "servDuration": "2 hours",
+          "servType": "Treatment",
+          "servAvailability": "Available",
+          "serviceStatus": "active"
+        }
+      ]
+    }
+  ]
+}

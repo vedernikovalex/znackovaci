@@ -71,9 +71,41 @@
     </script>
 
     <title>Healthcare Provider - Quality Medical Services</title>
+
+    <!-- JavaScript to load and transform XML data -->
+    <script>
+      // Load XML or XSLT file synchronously
+      function loadXMLDoc(filename) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", filename, false);
+        xhttp.send();
+        return xhttp.responseXML;
+      }
+
+      // Transform XML using the provided XSLT and insert the result into the container
+      function displayData() {
+        var xml = loadXMLDoc("data.xml");
+        var xsl = loadXMLDoc("transformation.xslt");
+
+        if (window.XSLTProcessor) {
+          var xsltProcessor = new XSLTProcessor();
+          xsltProcessor.importStylesheet(xsl);
+          var resultDocument = xsltProcessor.transformToFragment(xml, document);
+          document.getElementById("data-container").appendChild(resultDocument);
+        } else if (window.ActiveXObject || "ActiveXObject" in window) {
+          // For older versions of IE
+          var result = xml.transformNode(xsl);
+          document.getElementById("data-container").innerHTML = result;
+        } else {
+          document.getElementById("data-container").innerHTML =
+            "Your browser does not support XSLT transformations.";
+        }
+      }
+    </script>
   </head>
 
-  <body>
+  <!-- Call displayData() on page load -->
+  <body onload="displayData()">
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -124,6 +156,14 @@
           <li>Dental Care</li>
           <li>Emergency Services</li>
         </ul>
+      </section>
+
+      <!-- Our Providers Section (XML data will be injected here) -->
+      <section id="providers">
+        <h2>Our Providers</h2>
+        <div id="data-container">
+          <!-- Transformed XML data from data.xml will appear here -->
+        </div>
       </section>
 
       <!-- News Section -->
