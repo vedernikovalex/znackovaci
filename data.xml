@@ -1,201 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<healthcareData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd" lang="en">
-  <providerRecord provID="P001">
-    <provIdentifier>P001</provIdentifier>
-    <provName>Healthcare Provider One</provName>
-    <provEstablishmentYear establishmentSource="official">1995</provEstablishmentYear>
-    <provRating ratingSource="survey">4.5</provRating>
-    <provAddress>
-      <addrStreet>123 Health St.</addrStreet>
-      <addrCity>CityOne</addrCity>
-      <addrState>StateOne</addrState>
-      <addrPostal>12345</addrPostal>
-      <addrCountry>US</addrCountry>
-    </provAddress>
-    <provContacts>
-      <contactPhone>+1-555-111-2222</contactPhone>
-      <contactEmail verified="true">contact1@healthcare.com</contactEmail>
-      <contactWebsite websiteType="official">https://providerone.com</contactWebsite>
-    </provContacts>
-    <provDepartments>
-      <deptRecord deptID="D001" deptFloor="1">
-        <deptName>Cardiology</deptName>
-        <deptHead>Dr. Heart</deptHead>
-        <deptPhone>+1-555-111-3333</deptPhone>
-        <deptLocation>Building A</deptLocation>
-      </deptRecord>
-      <deptRecord deptID="D002" deptFloor="2">
-        <deptName>Pediatrics</deptName>
-        <deptHead>Dr. Kid</deptHead>
-        <deptPhone>+1-555-111-4444</deptPhone>
-        <deptLocation>Building B</deptLocation>
-      </deptRecord>
-    </provDepartments>
-    <provServices>
-      <servRecord servID="S001" serviceStatus="active">
-        <servName>General Check-up</servName>
-        <servDesc>Routine medical check-up services</servDesc>
-        <servFee feeCurrency="USD">100</servFee>
-        <servDuration>30 minutes</servDuration>
-        <servType>Consultation</servType>
-        <servAvailability>Available</servAvailability>
-      </servRecord>
-      <servRecord servID="S002" serviceStatus="active">
-        <servName>Emergency</servName>
-        <servDesc>24/7 emergency services</servDesc>
-        <servFee feeCurrency="USD">Variable</servFee>
-        <servDuration>Immediate</servDuration>
-        <servType>Critical</servType>
-        <servAvailability>Always</servAvailability>
-      </servRecord>
-    </provServices>
-  </providerRecord>
+<healthcareData xmlns:xsi="znackovaci" xsi:noNamespaceSchemaLocation="schema.xsd" lang="en">
+    <providerRecord provID="P001">
+        <provIdentifier>P001</provIdentifier>
+        <provName>Healthcare Provider One</provName>
+        <provEstablishmentYear establishmentSource="official">1995</provEstablishmentYear>
+        <provRating ratingSource="survey">4.5</provRating>
+        <provAddress>
+            <addrStreet>123 Health St.</addrStreet>
+            <addrCity>CityOne</addrCity>
+            <addrState>StateOne</addrState>
+            <addrPostal>12345</addrPostal>
+            <addrCountry>US</addrCountry>
+        </provAddress>
+        <provContacts>
+            <contactPhone>+1-555-111-2222</contactPhone>
+            <contactEmail verified="true">contact1@healthcare.com</contactEmail>
+            <contactWebsite websiteType="official">https://providerone.com</contactWebsite>
+        </provContacts>
+        <provDepartments>
+            <deptRecord deptID="D001" deptFloor="1">
+                <deptName>Cardiology</deptName>
+                <deptHead>Dr. Heart</deptHead>
+                <deptPhone>+1-555-111-3333</deptPhone>
+                <deptLocation>Building A</deptLocation>
+            </deptRecord>
+            <deptRecord deptID="D002" deptFloor="2">
+                <deptName>Pediatrics</deptName>
+                <deptHead>Dr. Kid</deptHead>
+                <deptPhone>+1-555-111-4444</deptPhone>
+                <deptLocation>Building B</deptLocation>
+            </deptRecord>
+        </provDepartments>
+        <provServices>
+            <servRecord servID="S001" serviceStatus="active">
+                <servName>General Check-up</servName>
+                <servDesc>Routine medical check-up services</servDesc>
+                <servFee feeCurrency="USD">100</servFee>
+                <servDuration>30 minutes</servDuration>
+                <servType>Consultation</servType>
+                <servAvailability>Available</servAvailability>
+            </servRecord>
+            <servRecord servID="S002" serviceStatus="active">
+                <servName>Emergency</servName>
+                <servDesc>24/7 emergency services</servDesc>
+                <servFee feeCurrency="USD">Variable</servFee>
+                <servDuration>Immediate</servDuration>
+                <servType>Critical</servType>
+                <servAvailability>Always</servAvailability>
+            </servRecord>
+        </provServices>
+    </providerRecord>
 
-  <providerRecord provID="P002">
-    <provIdentifier>P002</provIdentifier>
-    <provName>Healthcare Provider Two</provName>
-    <provEstablishmentYear establishmentSource="official">2000</provEstablishmentYear>
-    <provRating ratingSource="survey">4.2</provRating>
-    <provAddress>
-      <addrStreet>456 Wellness Ave.</addrStreet>
-      <addrCity>CityTwo</addrCity>
-      <addrState>StateTwo</addrState>
-      <addrPostal>23456</addrPostal>
-      <addrCountry>US</addrCountry>
-    </provAddress>
-    <provContacts>
-      <contactPhone>+1-555-222-3333</contactPhone>
-      <contactEmail verified="false">info@healthtwo.com</contactEmail>
-      <contactWebsite websiteType="official">https://healthtwo.com</contactWebsite>
-    </provContacts>
-    <provDepartments>
-      <deptRecord deptID="D003" deptFloor="3">
-        <deptName>Orthopedics</deptName>
-        <deptHead>Dr. Bone</deptHead>
-        <deptPhone>+1-555-222-4444</deptPhone>
-        <deptLocation>Building C</deptLocation>
-      </deptRecord>
-    </provDepartments>
-    <provServices>
-      <servRecord servID="S003" serviceStatus="active">
-        <servName>Physical Therapy</servName>
-        <servDesc>Rehabilitation services</servDesc>
-        <servFee feeCurrency="USD">150</servFee>
-        <servDuration>45 minutes</servDuration>
-        <servType>Therapy</servType>
-        <servAvailability>Available</servAvailability>
-      </servRecord>
-    </provServices>
-  </providerRecord>
+    <providerRecord provID="P002">
+        <provIdentifier>P002</provIdentifier>
+        <provName>Healthcare Provider Two</provName>
+        <provEstablishmentYear establishmentSource="official">2000</provEstablishmentYear>
+        <provRating ratingSource="survey">4.2</provRating>
+        <provAddress>
+            <addrStreet>456 Wellness Ave.</addrStreet>
+            <addrCity>CityTwo</addrCity>
+            <addrState>StateTwo</addrState>
+            <addrPostal>23456</addrPostal>
+            <addrCountry>US</addrCountry>
+        </provAddress>
+        <provContacts>
+            <contactPhone>+1-555-222-3333</contactPhone>
+            <contactEmail verified="false">info@healthtwo.com</contactEmail>
+            <contactWebsite websiteType="official">https://healthtwo.com</contactWebsite>
+        </provContacts>
+        <provDepartments>
+            <deptRecord deptID="D003" deptFloor="3">
+                <deptName>Orthopedics</deptName>
+                <deptHead>Dr. Bone</deptHead>
+                <deptPhone>+1-555-222-4444</deptPhone>
+                <deptLocation>Building C</deptLocation>
+            </deptRecord>
+        </provDepartments>
+        <provServices>
+            <servRecord servID="S003" serviceStatus="active">
+                <servName>Physical Therapy</servName>
+                <servDesc>Rehabilitation services</servDesc>
+                <servFee feeCurrency="USD">150</servFee>
+                <servDuration>45 minutes</servDuration>
+                <servType>Therapy</servType>
+                <servAvailability>Available</servAvailability>
+            </servRecord>
+        </provServices>
+    </providerRecord>
 
-  <providerRecord provID="P003">
-    <provIdentifier>P003</provIdentifier>
-    <provName>Healthcare Provider Three</provName>
-    <provEstablishmentYear establishmentSource="official">2010</provEstablishmentYear>
-    <provRating ratingSource="survey">4.8</provRating>
-    <provAddress>
-      <addrStreet>789 Care Blvd.</addrStreet>
-      <addrCity>CityThree</addrCity>
-      <addrState>StateThree</addrState>
-      <addrPostal>34567</addrPostal>
-      <addrCountry>US</addrCountry>
-    </provAddress>
-    <provContacts>
-      <contactPhone>+1-555-333-4444</contactPhone>
-      <contactEmail verified="true">support@healththree.com</contactEmail>
-      <contactWebsite websiteType="official">https://healththree.com</contactWebsite>
-    </provContacts>
-    <provDepartments>
-      <deptRecord deptID="D004" deptFloor="1">
-        <deptName>Neurology</deptName>
-        <deptHead>Dr. Brain</deptHead>
-        <deptPhone>+1-555-333-5555</deptPhone>
-        <deptLocation>Building D</deptLocation>
-      </deptRecord>
-    </provDepartments>
-    <provServices>
-      <servRecord servID="S004" serviceStatus="inactive">
-        <servName>MRI Scan</servName>
-        <servDesc>Advanced imaging services</servDesc>
-        <servFee feeCurrency="USD">500</servFee>
-        <servDuration>1 hour</servDuration>
-        <servType>Imaging</servType>
-        <servAvailability>Limited</servAvailability>
-      </servRecord>
-    </provServices>
-  </providerRecord>
+    <providerRecord provID="P003">
+        <provIdentifier>P003</provIdentifier>
+        <provName>Healthcare Provider Three</provName>
+        <provEstablishmentYear establishmentSource="official">2010</provEstablishmentYear>
+        <provRating ratingSource="survey">4.8</provRating>
+        <provAddress>
+            <addrStreet>789 Care Blvd.</addrStreet>
+            <addrCity>CityThree</addrCity>
+            <addrState>StateThree</addrState>
+            <addrPostal>34567</addrPostal>
+            <addrCountry>US</addrCountry>
+        </provAddress>
+        <provContacts>
+            <contactPhone>+1-555-333-4444</contactPhone>
+            <contactEmail verified="true">support@healththree.com</contactEmail>
+            <contactWebsite websiteType="official">https://healththree.com</contactWebsite>
+        </provContacts>
+        <provDepartments>
+            <deptRecord deptID="D004" deptFloor="1">
+                <deptName>Neurology</deptName>
+                <deptHead>Dr. Brain</deptHead>
+                <deptPhone>+1-555-333-5555</deptPhone>
+                <deptLocation>Building D</deptLocation>
+            </deptRecord>
+        </provDepartments>
+        <provServices>
+            <servRecord servID="S004" serviceStatus="inactive">
+                <servName>MRI Scan</servName>
+                <servDesc>Advanced imaging services</servDesc>
+                <servFee feeCurrency="USD">500</servFee>
+                <servDuration>1 hour</servDuration>
+                <servType>Imaging</servType>
+                <servAvailability>Limited</servAvailability>
+            </servRecord>
+        </provServices>
+    </providerRecord>
 
-  <providerRecord provID="P004">
-    <provIdentifier>P004</provIdentifier>
-    <provName>Healthcare Provider Four</provName>
-    <provEstablishmentYear establishmentSource="official">1985</provEstablishmentYear>
-    <provRating ratingSource="survey">4.0</provRating>
-    <provAddress>
-      <addrStreet>321 Recovery Rd.</addrStreet>
-      <addrCity>CityFour</addrCity>
-      <addrState>StateFour</addrState>
-      <addrPostal>45678</addrPostal>
-      <addrCountry>US</addrCountry>
-    </provAddress>
-    <provContacts>
-      <contactPhone>+1-555-444-5555</contactPhone>
-      <contactEmail verified="true">hello@healthfour.com</contactEmail>
-      <contactWebsite websiteType="official">https://healthfour.com</contactWebsite>
-    </provContacts>
-    <provDepartments>
-      <deptRecord deptID="D005" deptFloor="2">
-        <deptName>Dermatology</deptName>
-        <deptHead>Dr. Skin</deptHead>
-        <deptPhone>+1-555-444-6666</deptPhone>
-        <deptLocation>Building E</deptLocation>
-      </deptRecord>
-    </provDepartments>
-    <provServices>
-      <servRecord servID="S005" serviceStatus="active">
-        <servName>Skin Treatment</servName>
-        <servDesc>Advanced dermatology services</servDesc>
-        <servFee feeCurrency="USD">200</servFee>
-        <servDuration>40 minutes</servDuration>
-        <servType>Therapy</servType>
-        <servAvailability>Available</servAvailability>
-      </servRecord>
-    </provServices>
-  </providerRecord>
+    <providerRecord provID="P004">
+        <provIdentifier>P004</provIdentifier>
+        <provName>Healthcare Provider Four</provName>
+        <provEstablishmentYear establishmentSource="official">1985</provEstablishmentYear>
+        <provRating ratingSource="survey">4.0</provRating>
+        <provAddress>
+            <addrStreet>321 Recovery Rd.</addrStreet>
+            <addrCity>CityFour</addrCity>
+            <addrState>StateFour</addrState>
+            <addrPostal>45678</addrPostal>
+            <addrCountry>US</addrCountry>
+        </provAddress>
+        <provContacts>
+            <contactPhone>+1-555-444-5555</contactPhone>
+            <contactEmail verified="true">hello@healthfour.com</contactEmail>
+            <contactWebsite websiteType="official">https://healthfour.com</contactWebsite>
+        </provContacts>
+        <provDepartments>
+            <deptRecord deptID="D005" deptFloor="2">
+                <deptName>Dermatology</deptName>
+                <deptHead>Dr. Skin</deptHead>
+                <deptPhone>+1-555-444-6666</deptPhone>
+                <deptLocation>Building E</deptLocation>
+            </deptRecord>
+        </provDepartments>
+        <provServices>
+            <servRecord servID="S005" serviceStatus="active">
+                <servName>Skin Treatment</servName>
+                <servDesc>Advanced dermatology services</servDesc>
+                <servFee feeCurrency="USD">200</servFee>
+                <servDuration>40 minutes</servDuration>
+                <servType>Therapy</servType>
+                <servAvailability>Available</servAvailability>
+            </servRecord>
+        </provServices>
+    </providerRecord>
 
-  <providerRecord provID="P005">
-    <provIdentifier>P005</provIdentifier>
-    <provName>Healthcare Provider Five</provName>
-    <provEstablishmentYear establishmentSource="official">2005</provEstablishmentYear>
-    <provRating ratingSource="survey">4.3</provRating>
-    <provAddress>
-      <addrStreet>654 Wellness St.</addrStreet>
-      <addrCity>CityFive</addrCity>
-      <addrState>StateFive</addrState>
-      <addrPostal>56789</addrPostal>
-      <addrCountry>US</addrCountry>
-    </provAddress>
-    <provContacts>
-      <contactPhone>+1-555-555-6666</contactPhone>
-      <contactEmail verified="true">contact5@healthfive.com</contactEmail>
-      <contactWebsite websiteType="official">https://healthfive.com</contactWebsite>
-    </provContacts>
-    <provDepartments>
-      <deptRecord deptID="D006" deptFloor="3">
-        <deptName>Oncology</deptName>
-        <deptHead>Dr. Cure</deptHead>
-        <deptPhone>+1-555-555-7777</deptPhone>
-        <deptLocation>Building F</deptLocation>
-      </deptRecord>
-    </provDepartments>
-    <provServices>
-      <servRecord servID="S006" serviceStatus="active">
-        <servName>Chemotherapy</servName>
-        <servDesc>Cancer treatment services</servDesc>
-        <servFee feeCurrency="USD">800</servFee>
-        <servDuration>2 hours</servDuration>
-        <servType>Treatment</servType>
-        <servAvailability>Available</servAvailability>
-      </servRecord>
-    </provServices>
-  </providerRecord>
+    <providerRecord provID="P005">
+        <provIdentifier>P005</provIdentifier>
+        <provName>Healthcare Provider Five</provName>
+        <provEstablishmentYear establishmentSource="official">2005</provEstablishmentYear>
+        <provRating ratingSource="survey">4.3</provRating>
+        <provAddress>
+            <addrStreet>654 Wellness St.</addrStreet>
+            <addrCity>CityFive</addrCity>
+            <addrState>StateFive</addrState>
+            <addrPostal>56789</addrPostal>
+            <addrCountry>US</addrCountry>
+        </provAddress>
+        <provContacts>
+            <contactPhone>+1-555-555-6666</contactPhone>
+            <contactEmail verified="true">contact5@healthfive.com</contactEmail>
+            <contactWebsite websiteType="official">https://healthfive.com</contactWebsite>
+        </provContacts>
+        <provDepartments>
+            <deptRecord deptID="D006" deptFloor="3">
+                <deptName>Oncology</deptName>
+                <deptHead>Dr. Cure</deptHead>
+                <deptPhone>+1-555-555-7777</deptPhone>
+                <deptLocation>Building F</deptLocation>
+            </deptRecord>
+        </provDepartments>
+        <provServices>
+            <servRecord servID="S006" serviceStatus="active">
+                <servName>Chemotherapy</servName>
+                <servDesc>Cancer treatment services</servDesc>
+                <servFee feeCurrency="USD">800</servFee>
+                <servDuration>2 hours</servDuration>
+                <servType>Treatment</servType>
+                <servAvailability>Available</servAvailability>
+            </servRecord>
+        </provServices>
+    </providerRecord>
 </healthcareData>
