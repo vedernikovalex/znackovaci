@@ -1,43 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <!-- Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Your Name" />
+    <meta name="author" content="Alexander Vedernikov" />
+    <meta name="author" content="Jakub Hrubý" />
     <meta
       name="description"
-      content="A modern healthcare service provider website"
+      content="Moderní poskytovatel zdravotnických služeb v České republice"
     />
     <meta
       name="keywords"
-      content="healthcare, clinic, medical, doctor, services"
+      content="zdravotnictví, klinika, lékař, ordinace, zdravotní služby"
     />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:title" content="Healthcare Provider" />
+    <meta property="og:title" content="Zdravotní středisko Praha" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:url" content="https://zdravotnistrediskopraha.cz" />
     <meta
       property="og:image"
-      content="https://yourwebsite.com/assets/og-image.jpg"
+      content="https://zdravotnistrediskopraha.cz/assets/og-image.jpg"
     />
     <meta
       property="og:description"
-      content="Providing top-quality healthcare services."
+      content="Poskytujeme kvalitní zdravotní péči pro vás a vaši rodinu."
     />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="cs_CZ" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Healthcare Provider" />
+    <meta name="twitter:title" content="Zdravotní středisko Praha" />
     <meta
       name="twitter:description"
-      content="Providing top-quality healthcare services."
+      content="Poskytujeme kvalitní zdravotní péči pro vás a vaši rodinu."
     />
     <meta
       name="twitter:image"
-      content="https://yourwebsite.com/assets/twitter-image.jpg"
+      content="https://zdravotnistrediskopraha.cz/assets/twitter-image.jpg"
     />
 
     <!-- Favicon -->
@@ -51,204 +52,189 @@
       {
         "@context": "https://schema.org",
         "@type": "MedicalOrganization",
-        "name": "Healthcare Provider",
-        "url": "https://yourwebsite.com",
-        "logo": "https://yourwebsite.com/assets/logo.png",
+        "name": "Zdravotní středisko Praha",
+        "url": "https://zdravotnistrediskopraha.cz",
+        "logo": "https://zdravotnistrediskopraha.cz/assets/logo.png",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "123 Health St.",
-          "addressLocality": "City",
-          "addressRegion": "State",
-          "postalCode": "12345",
-          "addressCountry": "US"
+          "streetAddress": "Vinohradská 234",
+          "addressLocality": "Praha",
+          "addressRegion": "Praha",
+          "postalCode": "13000",
+          "addressCountry": "CZ"
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+1-555-555-5555",
-          "contactType": "customer service"
+          "telephone": "+420 777 123 456",
+          "contactType": "zákaznická podpora"
         }
       }
     </script>
 
-    <title>Healthcare Provider - Quality Medical Services</title>
-
-    <!-- JavaScript to load and transform XML data -->
-    <script>
-      // Load XML or XSLT file synchronously
-      function loadXMLDoc(filename) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", filename, false);
-        xhttp.send();
-        return xhttp.responseXML;
-      }
-
-      // Transform XML using the provided XSLT and insert the result into the container
-      function displayData() {
-        var xml = loadXMLDoc("data.xml");
-        var xsl = loadXMLDoc("transformation.xslt");
-
-        if (window.XSLTProcessor) {
-          var xsltProcessor = new XSLTProcessor();
-          xsltProcessor.importStylesheet(xsl);
-          var resultDocument = xsltProcessor.transformToFragment(xml, document);
-          document.getElementById("data-container").appendChild(resultDocument);
-        } else if (window.ActiveXObject || "ActiveXObject" in window) {
-          // For older versions of IE
-          var result = xml.transformNode(xsl);
-          document.getElementById("data-container").innerHTML = result;
-        } else {
-          document.getElementById("data-container").innerHTML =
-            "Your browser does not support XSLT transformations.";
-        }
-      }
-    </script>
+    <title>Zdravotní středisko Praha – Kvalitní zdravotní péče</title>
   </head>
 
-  <!-- Call displayData() on page load -->
-  <body onload="displayData()">
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <body>
+    <a href="#main-content" class="skip-link">Přejít k hlavnímu obsahu</a>
 
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="assets/logo.png" alt="Healthcare Provider Logo" />
+          <img src="assets/logo.png" alt="Logo Zdravotní středisko Praha" />
         </a>
       </div>
       <nav>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#services">Služby</a></li>
+          <li><a href="#news">Aktuality</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main-content">
-      <!-- Hero Section -->
+      <!-- Hero sekce -->
       <section id="hero">
-        <h1>Your Health, Our Priority</h1>
-        <p>Providing top-quality medical services for you and your family.</p>
-        <a href="#contact" class="cta-button">Book an Appointment</a>
+        <h1>Vaše zdraví, naše priorita</h1>
+        <p>Špičkové zdravotní služby pro vás i vaši rodinu.</p>
+        <a href="#contact" class="cta-button">Objednat se na vyšetření</a>
       </section>
 
-      <!-- About Section -->
+      <!-- O nás -->
       <section id="about">
-        <h2>About Us</h2>
+        <h2>O nás</h2>
         <p>
-          We are a healthcare provider committed to offering exceptional medical
-          care.
+          Jsme moderní zdravotní středisko s týmem odborných lékařů v centru
+          Prahy.
         </p>
         <figure>
-          <img src="assets/about.jpg" alt="Doctor with patient" />
-          <figcaption>Our dedicated medical team.</figcaption>
+          <img src="assets/team.jpg" alt="Lékař s pacientem" />
+          <figcaption>Náš zkušený lékařský tým</figcaption>
         </figure>
       </section>
 
-      <!-- Services Section -->
+      <!-- Služby -->
       <section id="services">
-        <h2>Our Services</h2>
+        <h2>Naše služby</h2>
         <ul>
-          <li>General Check-ups</li>
-          <li>Pediatrics</li>
-          <li>Cardiology</li>
-          <li>Dental Care</li>
-          <li>Emergency Services</li>
+          <li>Všeobecné prohlídky</li>
+          <li>Pediatrie</li>
+          <li>Kardiologie</li>
+          <li>Zubní péče</li>
+          <li>Pohotovostní služby</li>
         </ul>
       </section>
 
-      <!-- Our Providers Section (XML data will be injected here) -->
+      <!-- Lékařský tým -->
       <section id="providers">
-        <h2>Our Providers</h2>
+        <h2>Náš tým lékařů</h2>
         <div id="data-container">
-          <!-- Transformed XML data from data.xml will appear here -->
+          <ul class="doctor-list">
+            <li>
+              <h3>MUDr. Petr Svoboda</h3>
+              <p>Všeobecný praktický lékař</p>
+              <p>Ordinační hodiny: Po–Pá 8:00–16:00</p>
+            </li>
+            <li>
+              <h3>MUDr. Hana Nováková</h3>
+              <p>Pediatrie</p>
+              <p>Ordinační hodiny: Po–Čt 9:00–15:00</p>
+            </li>
+            <li>
+              <h3>MUDr. Jan Dvořák</h3>
+              <p>Kardiologie</p>
+              <p>Ordinační hodiny: Út, Čt 10:00–18:00</p>
+            </li>
+            <li>
+              <h3>MDDr. Eva Horáková</h3>
+              <p>Zubní lékařství</p>
+              <p>Ordinační hodiny: Po, St, Pá 8:00–14:00</p>
+            </li>
+            <li>
+              <h3>MUDr. Martin Procházka</h3>
+              <p>Pohotovostní lékařská služba</p>
+              <p>Dostupnost: Po–So 8:00–20:00</p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- News Section -->
+      <!-- Aktuality -->
       <section id="news">
-        <h2>Latest News</h2>
+        <h2>Aktuality</h2>
         <article>
-          <h3>New Cardiology Unit Opening</h3>
+          <h3>Otevření nové kardiologické jednotky</h3>
           <p>
-            We are expanding our cardiology department to provide better care.
+            Rozšiřujeme oddělení kardiologie pro lepší péči o naše pacienty.
           </p>
-          <time datetime="2025-02-15">February 15, 2025</time>
+          <time datetime="2025-02-15">15. února 2025</time>
         </article>
         <article>
-          <h3>Free Health Check-up Campaign</h3>
-          <p>
-            Join our free health check-up campaign to stay ahead of health
-            risks.
-          </p>
-          <time datetime="2025-03-10">March 10, 2025</time>
-        </article>
-        <article>
-          <h3>Free Health Check-up Campaign</h3>
-          <p>
-            Join our free health check-up campaign to stay ahead of health
-            risks.
-          </p>
-          <time datetime="2025-03-10">March 10, 2025</time>
+          <h3>Kampaň bezplatných zdravotních prohlídek</h3>
+          <p>Zúčastněte se naší kampaně a předcházejte zdravotním rizikům.</p>
+          <time datetime="2025-03-10">10. března 2025</time>
         </article>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Kontakt -->
       <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Kontaktujte nás</h2>
         <address>
-          <p>123 Health St., City, State, 12345</p>
-          <p>Phone: <a href="tel:+15555555555">+1-555-555-5555</a></p>
+          <p>Vinohradská 234, Praha 3, 130 00</p>
+          <p>Tel.: <a href="tel:+420777123456">+420 777 123 456</a></p>
           <p>
-            Email: <a href="mailto:info@healthcare.com">info@healthcare.com</a>
+            E-mail:
+            <a href="mailto:info@zdravotnistrediskopraha.cz"
+              >info@zdravotnistrediskopraha.cz</a
+            >
           </p>
         </address>
-        <h3>Opening Hours</h3>
+        <h3>Ordinační hodiny</h3>
         <table>
           <tr>
-            <th>Day</th>
-            <th>Hours</th>
+            <th>Den</th>
+            <th>Hodiny</th>
           </tr>
           <tr>
-            <td>Monday - Friday</td>
-            <td>8:00 AM - 8:00 PM</td>
+            <td>Pondělí – Pátek</td>
+            <td>8:00 – 20:00</td>
           </tr>
           <tr>
-            <td>Saturday</td>
-            <td>9:00 AM - 5:00 PM</td>
+            <td>Sobota</td>
+            <td>9:00 – 17:00</td>
           </tr>
           <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
+            <td>Neděle</td>
+            <td>Zavřeno</td>
           </tr>
         </table>
+        <figure
+          style="display: grid; justify-content: center; flex-direction: column"
+        >
+          <div>
+            <img src="assets/outside1.jpg" alt="Lekárna zvenku" />
+            <figcaption>Naše lékárna zvenku</figcaption>
+          </div>
+        </figure>
       </section>
     </main>
 
     <aside>
-      <h2>Follow Us</h2>
+      <h2>Sledujte nás</h2>
       <ul>
-        <li>
-          <a href="https://facebook.com/healthcare" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/healthcare" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="https://instagram.com/healthcare" target="_blank"
-            >Instagram</a
-          >
-        </li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
       </ul>
     </aside>
 
     <footer>
-      <p>&copy; 2025 Healthcare Provider. All rights reserved.</p>
+      <p>&copy; 2025 Zdravotní středisko Praha. Všechna práva vyhrazena.</p>
       <nav>
         <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="#">Zásady ochrany osobních údajů</a></li>
+          <li><a href="#">Podmínky použití</a></li>
         </ul>
       </nav>
     </footer>

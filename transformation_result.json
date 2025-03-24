@@ -1,101 +1,42 @@
 {
   "providers": [
     {
-      "provID": "P001",
-      "provIdentifier": "P001",
-      "provName": "Healthcare Provider One",
-      "provEstablishmentYear": 1995,
-      "provRating": 4.5,
+      "provID": "P004",
+      "provIdentifier": "P004",
+      "provName": "Kožní klinika Plzeň",
+      "provEstablishmentYear": 1985,
+      "provRating": 4.0,
       "provAddress": {
-        "addrStreet": "123 Health St.",
-        "addrCity": "CityOne",
-        "addrState": "StateOne",
-        "addrPostal": "12345",
-        "addrCountry": "US"
+        "addrStreet": "Smetanova 321",
+        "addrCity": "Plzeň",
+        "addrState": "Plzeňský kraj",
+        "addrPostal": "30100",
+        "addrCountry": "CZ"
       },
       "provContacts": {
-        "contactPhone": "+1-555-111-2222",
-        "contactEmail": "contact1@healthcare.com",
-        "contactWebsite": "https://providerone.com"
+        "contactPhone": "+420 377 444 555",
+        "contactEmail": "info@koznipraxe.cz",
+        "contactWebsite": "https://koznipraxe.cz"
       },
       "provDepartments": [
         {
-          "deptID": "D001",
-          "deptName": "Cardiology",
-          "deptHead": "Dr. Heart",
-          "deptPhone": "+1-555-111-3333",
-          "deptLocation": "Building A",
-          "deptFloor": 1
-        },
-        {
-          "deptID": "D002",
-          "deptName": "Pediatrics",
-          "deptHead": "Dr. Kid",
-          "deptPhone": "+1-555-111-4444",
-          "deptLocation": "Building B",
+          "deptID": "D005",
+          "deptName": "Dermatologie",
+          "deptHead": "MUDr. Lucie Kožní",
+          "deptPhone": "+420 377 444 556",
+          "deptLocation": "Budova E",
           "deptFloor": 2
         }
       ],
       "provServices": [
         {
-          "servID": "S001",
-          "servName": "General Check-up",
-          "servDesc": "Routine medical check-up services",
-          "servFee": "100",
-          "servDuration": "30 minutes",
-          "servType": "Consultation",
-          "servAvailability": "Available",
-          "serviceStatus": "active"
-        },
-        {
-          "servID": "S002",
-          "servName": "Emergency",
-          "servDesc": "24/7 emergency services",
-          "servFee": "Variable",
-          "servDuration": "Immediate",
-          "servType": "Critical",
-          "servAvailability": "Always",
-          "serviceStatus": "active"
-        }
-      ]
-    },
-    {
-      "provID": "P002",
-      "provIdentifier": "P002",
-      "provName": "Healthcare Provider Two",
-      "provEstablishmentYear": 2000,
-      "provRating": 4.2,
-      "provAddress": {
-        "addrStreet": "456 Wellness Ave.",
-        "addrCity": "CityTwo",
-        "addrState": "StateTwo",
-        "addrPostal": "23456",
-        "addrCountry": "US"
-      },
-      "provContacts": {
-        "contactPhone": "+1-555-222-3333",
-        "contactEmail": "info@healthtwo.com",
-        "contactWebsite": "https://healthtwo.com"
-      },
-      "provDepartments": [
-        {
-          "deptID": "D003",
-          "deptName": "Orthopedics",
-          "deptHead": "Dr. Bone",
-          "deptPhone": "+1-555-222-4444",
-          "deptLocation": "Building C",
-          "deptFloor": 3
-        }
-      ],
-      "provServices": [
-        {
-          "servID": "S003",
-          "servName": "Physical Therapy",
-          "servDesc": "Rehabilitation services",
-          "servFee": "150",
-          "servDuration": "45 minutes",
-          "servType": "Therapy",
-          "servAvailability": "Available",
+          "servID": "S005",
+          "servName": "Léčba kožních onemocnění",
+          "servDesc": "Pokročilá dermatologická péče",
+          "servFee": "1200",
+          "servDuration": "40 minut",
+          "servType": "Terapeutická péče",
+          "servAvailability": "Dostupná",
           "serviceStatus": "active"
         }
       ]
@@ -103,122 +44,140 @@
     {
       "provID": "P003",
       "provIdentifier": "P003",
-      "provName": "Healthcare Provider Three",
+      "provName": "Poliklinika Ostrava",
       "provEstablishmentYear": 2010,
       "provRating": 4.8,
       "provAddress": {
-        "addrStreet": "789 Care Blvd.",
-        "addrCity": "CityThree",
-        "addrState": "StateThree",
-        "addrPostal": "34567",
-        "addrCountry": "US"
+        "addrStreet": "Nádražní 789",
+        "addrCity": "Ostrava",
+        "addrState": "Moravskoslezský kraj",
+        "addrPostal": "70200",
+        "addrCountry": "CZ"
       },
       "provContacts": {
-        "contactPhone": "+1-555-333-4444",
-        "contactEmail": "support@healththree.com",
-        "contactWebsite": "https://healththree.com"
+        "contactPhone": "+420 596 333 444",
+        "contactEmail": "info@poliklinikaostrava.cz",
+        "contactWebsite": "https://poliklinikaostrava.cz"
       },
       "provDepartments": [
         {
           "deptID": "D004",
-          "deptName": "Neurology",
-          "deptHead": "Dr. Brain",
-          "deptPhone": "+1-555-333-5555",
-          "deptLocation": "Building D",
+          "deptName": "Neurologie",
+          "deptHead": "MUDr. Pavel Mozek",
+          "deptPhone": "+420 596 333 445",
+          "deptLocation": "Budova D",
           "deptFloor": 1
         }
       ],
       "provServices": [
         {
           "servID": "S004",
-          "servName": "MRI Scan",
-          "servDesc": "Advanced imaging services",
-          "servFee": "500",
-          "servDuration": "1 hour",
-          "servType": "Imaging",
-          "servAvailability": "Limited",
+          "servName": "Vyšetření magnetickou rezonancí",
+          "servDesc": "Pokročilé diagnostické zobrazování",
+          "servFee": "3000",
+          "servDuration": "1 hodina",
+          "servType": "Zobrazování",
+          "servAvailability": "Omezená",
           "serviceStatus": "inactive"
         }
       ]
     },
     {
-      "provID": "P004",
-      "provIdentifier": "P004",
-      "provName": "Healthcare Provider Four",
-      "provEstablishmentYear": 1985,
-      "provRating": 4.0,
+      "provID": "P002",
+      "provIdentifier": "P002",
+      "provName": "Zdravotní centrum Brno",
+      "provEstablishmentYear": 2000,
+      "provRating": 4.2,
       "provAddress": {
-        "addrStreet": "321 Recovery Rd.",
-        "addrCity": "CityFour",
-        "addrState": "StateFour",
-        "addrPostal": "45678",
-        "addrCountry": "US"
+        "addrStreet": "Masarykova 456",
+        "addrCity": "Brno",
+        "addrState": "Jihomoravský kraj",
+        "addrPostal": "60200",
+        "addrCountry": "CZ"
       },
       "provContacts": {
-        "contactPhone": "+1-555-444-5555",
-        "contactEmail": "hello@healthfour.com",
-        "contactWebsite": "https://healthfour.com"
+        "contactPhone": "+420 533 222 333",
+        "contactEmail": "kontakt@zdravbrno.cz",
+        "contactWebsite": "https://zdravbrno.cz"
       },
       "provDepartments": [
         {
-          "deptID": "D005",
-          "deptName": "Dermatology",
-          "deptHead": "Dr. Skin",
-          "deptPhone": "+1-555-444-6666",
-          "deptLocation": "Building E",
-          "deptFloor": 2
-        }
-      ],
-      "provServices": [
-        {
-          "servID": "S005",
-          "servName": "Skin Treatment",
-          "servDesc": "Advanced dermatology services",
-          "servFee": "200",
-          "servDuration": "40 minutes",
-          "servType": "Therapy",
-          "servAvailability": "Available",
-          "serviceStatus": "active"
-        }
-      ]
-    },
-    {
-      "provID": "P005",
-      "provIdentifier": "P005",
-      "provName": "Healthcare Provider Five",
-      "provEstablishmentYear": 2005,
-      "provRating": 4.3,
-      "provAddress": {
-        "addrStreet": "654 Wellness St.",
-        "addrCity": "CityFive",
-        "addrState": "StateFive",
-        "addrPostal": "56789",
-        "addrCountry": "US"
-      },
-      "provContacts": {
-        "contactPhone": "+1-555-555-6666",
-        "contactEmail": "contact5@healthfive.com",
-        "contactWebsite": "https://healthfive.com"
-      },
-      "provDepartments": [
-        {
-          "deptID": "D006",
-          "deptName": "Oncology",
-          "deptHead": "Dr. Cure",
-          "deptPhone": "+1-555-555-7777",
-          "deptLocation": "Building F",
+          "deptID": "D003",
+          "deptName": "Ortopedie",
+          "deptHead": "MUDr. Petr Kostka",
+          "deptPhone": "+420 533 222 334",
+          "deptLocation": "Budova C",
           "deptFloor": 3
         }
       ],
       "provServices": [
         {
-          "servID": "S006",
-          "servName": "Chemotherapy",
-          "servDesc": "Cancer treatment services",
-          "servFee": "800",
-          "servDuration": "2 hours",
-          "servType": "Treatment",
-          "servAvailability": "Available",
+          "servID": "S003",
+          "servName": "Fyzioterapie",
+          "servDesc": "Rehabilitační služby",
+          "servFee": "750",
+          "servDuration": "45 minut",
+          "servType": "Terapeutická péče",
+          "servAvailability": "Dostupná",
+          "serviceStatus": "active"
+        }
+      ]
+    },
+    {
+      "provID": "P001",
+      "provIdentifier": "P001",
+      "provName": "Zdravotní středisko Praha 1",
+      "provEstablishmentYear": 1995,
+      "provRating": 4.5,
+      "provAddress": {
+        "addrStreet": "Vinohradská 123",
+        "addrCity": "Praha",
+        "addrState": "Praha",
+        "addrPostal": "13000",
+        "addrCountry": "CZ"
+      },
+      "provContacts": {
+        "contactPhone": "+420 222 111 222",
+        "contactEmail": "info@zspraha1.cz",
+        "contactWebsite": "https://zspraha1.cz"
+      },
+      "provDepartments": [
+        {
+          "deptID": "D001",
+          "deptName": "Kardiologie",
+          "deptHead": "MUDr. Jan Srdce",
+          "deptPhone": "+420 222 111 223",
+          "deptLocation": "Budova A",
+          "deptFloor": 1
+        },
+        {
+          "deptID": "D002",
+          "deptName": "Pediatrie",
+          "deptHead": "MUDr. Eva Dětská",
+          "deptPhone": "+420 222 111 224",
+          "deptLocation": "Budova B",
+          "deptFloor": 2
+        }
+      ],
+      "provServices": [
+        {
+          "servID": "S001",
+          "servName": "Všeobecná prohlídka",
+          "servDesc": "Preventivní zdravotní prohlídka",
+          "servFee": "500",
+          "servDuration": "30 minut",
+          "servType": "Konzultace",
+          "servAvailability": "Dostupná",
+          "serviceStatus": "active"
+        },
+        {
+          "servID": "S002",
+          "servName": "Pohotovost",
+          "servDesc": "Nonstop pohotovostní služba",
+          "servFee": "Variabilní",
+          "servDuration": "Ihned",
+          "servType": "Akutní péče",
+          "servAvailability": "Vždy",
           "serviceStatus": "active"
         }
       ]
