@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-  <!-- Define a custom type for positive integers -->
   <xs:simpleType name="PositiveInteger">
     <xs:restriction base="xs:integer">
-      <!-- Custom restriction: Floor must be a positive integer -->
       <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- Root element -->
   <xs:element name="healthcareData">
     <xs:complexType>
       <xs:sequence>
@@ -19,7 +15,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- providerRecord element -->
   <xs:element name="providerRecord">
     <xs:complexType>
       <xs:sequence>
@@ -35,36 +30,27 @@
       <xs:attribute name="provID" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
-
-  <!-- provIdentifier -->
   <xs:element name="provIdentifier" type="xs:string" />
-
-  <!-- provName -->
   <xs:element name="provName" type="xs:string" />
 
-  <!-- provEstablishmentYear with a custom numeric restriction -->
   <xs:element name="provEstablishmentYear">
     <xs:simpleType>
       <xs:restriction base="xs:integer">
-        <!-- Custom restriction: Year must be between 1900 and 2025 -->
         <xs:minInclusive value="1900" />
         <xs:maxInclusive value="2025" />
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
 
-  <!-- provRating with a custom decimal restriction -->
   <xs:element name="provRating">
     <xs:simpleType>
       <xs:restriction base="xs:decimal">
-        <!-- Custom restriction: Rating must be between 0.0 and 5.0 -->
         <xs:minInclusive value="0.0" />
         <xs:maxInclusive value="5.0" />
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
 
-  <!-- provAddress complex type -->
   <xs:element name="provAddress">
     <xs:complexType>
       <xs:sequence>
@@ -104,7 +90,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- provDepartments complex type -->
   <xs:element name="provDepartments">
     <xs:complexType>
       <xs:sequence>
@@ -113,7 +98,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- deptRecord complex type -->
   <xs:element name="deptRecord">
     <xs:complexType>
       <xs:sequence>
@@ -127,7 +111,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- provServices complex type -->
   <xs:element name="provServices">
     <xs:complexType>
       <xs:sequence>
@@ -136,7 +119,6 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- servRecord complex type -->
   <xs:element name="servRecord">
     <xs:complexType>
       <xs:sequence>
@@ -144,7 +126,6 @@
         <xs:element name="servDesc" type="xs:string" />
         <xs:element name="servFee">
           <xs:simpleType>
-            <!-- Custom restriction: Fee must be a decimal or the literal 'Variable' -->
             <xs:union memberTypes="xs:decimal xs:string">
               <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -156,7 +137,6 @@
         </xs:element>
         <xs:element name="servDuration">
           <xs:simpleType>
-            <!-- Custom restriction: Duration must match a pattern like '30 minutes' or '1 hour' -->
             <xs:restriction base="xs:string">
               <xs:pattern value="(\d+ (minutes|hour|hours))" />
             </xs:restriction>
